@@ -5,4 +5,4 @@ services:
   nginx:
     image: nginx:1.23.2-alpine
     ports:
-      - 8080:80
+      - 8081:80
