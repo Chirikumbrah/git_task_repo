@@ -6,3 +6,4 @@ services:
     image: nginx:1.23.2-alpine
     ports:
       - 8081:80
+      
