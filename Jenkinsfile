@@ -8,7 +8,8 @@ pipeline {
         }
         stage('Running a docker-compose') {
             steps {
-                sh "docker-compose up -d --force-recreate"
+                sh "docker-compose down"
+                sh "docker-compose up -d"
             }
         }
     }
