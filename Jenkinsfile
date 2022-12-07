@@ -8,9 +8,8 @@ pipeline {
         }
         stage('Running a docker-compose') {
             steps {
-                sh '''#!/bin/bash
-                      docker-compose up -d --force-recreate
-                '''
+                sh "docker-composer build"
+                sh "docker-compose up -d"
             }
         }
     }
